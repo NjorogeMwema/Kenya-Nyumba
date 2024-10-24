@@ -98,8 +98,8 @@ function FilterSection({setBathCount,setBedCount,setParkingCount,setHomeType}) {
             <SelectItem value="Town House">
                Town House
             </SelectItem>
-            <SelectItem value="Condo">
-               Condo
+            <SelectItem value="Apartment">
+               Apartment
             </SelectItem>
           
           

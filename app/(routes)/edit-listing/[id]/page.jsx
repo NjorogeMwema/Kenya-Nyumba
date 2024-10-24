@@ -164,7 +164,7 @@ function EditListing({ params }) {
                                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
                                     <div className='flex gap-2 flex-col'>
 
-                                        <h2 className='text-gray-500'>Do you want to Rent it Sell it?</h2>
+                                        <h2 className='text-gray-500'>Do you want to Rent it or Sell it?</h2>
                                         <RadioGroup defaultValue={listing?.type}
                                             onValueChange={(v) => values.type = v}
                                         >
@@ -192,7 +192,7 @@ function EditListing({ params }) {
                                             <SelectContent>
                                                 <SelectItem value="Single Family House">Single Family House</SelectItem>
                                                 <SelectItem value="Town House">Town House</SelectItem>
-                                                <SelectItem value="Condo">Condo</SelectItem>
+                                                <SelectItem value="Apartment">Apartment</SelectItem>
                                             </SelectContent>
                                         </Select>
                                     </div>
@@ -214,7 +214,7 @@ function EditListing({ params }) {
                                     </div>
                                     <div className='flex gap-2 flex-col'   >
                                         <h2 className='text-gray-500'>Built In</h2>
-                                        <Input type="number" placeholder="Ex.1900 Sq.ft"
+                                        <Input type="number" placeholder="Ex.2010"
                                             onChange={handleChange}
                                             defaultValue={listing?.builtIn} name="builtIn" />
                                     </div>
@@ -244,16 +244,16 @@ function EditListing({ params }) {
                                 </div>
                                 <div className='grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
                                     <div className='flex gap-2 flex-col'>
-                                        <h2 className='text-gray-500'>Selling Price ($)</h2>
-                                        <Input type="number" placeholder="400000" name="price"
+                                        <h2 className='text-gray-500'>Price (Ksh)</h2>
+                                        <Input type="number" placeholder="400,000" name="price"
                                             onChange={handleChange}
                                             defaultValue={listing?.price} />
                                     </div>
                                     <div className='flex gap-2 flex-col'>
-                                        <h2 className='text-gray-500'>HOA (Per Month) ($)</h2>
+                                        <h2 className='text-gray-500'>Total Rooms</h2>
                                         <Input type="number"
-                                            defaultValue={listing?.hoa} placeholder="100" onChange={handleChange}
-                                            name="hoa" />
+                                            defaultValue={listing?.totalrooms} placeholder="10" onChange={handleChange}
+                                            name="totalrooms" />
                                     </div>
 
 
