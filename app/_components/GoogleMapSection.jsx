@@ -2,8 +2,8 @@ import React, { useCallback, useEffect, useState } from 'react'
 import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
 import MarkerItem from './MarkerItem';
 const containerStyle = {
-    width: '80%',
-    height: '80vh',
+    width: '50%',
+    height: '100vh',
     borderRadius:10
   };
   
