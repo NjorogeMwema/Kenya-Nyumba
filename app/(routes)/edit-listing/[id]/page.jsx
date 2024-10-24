@@ -229,10 +229,10 @@ function EditListing({ params }) {
                                         />
                                     </div>
                                     <div className='flex gap-2 flex-col'>
-                                        <h2 className='text-gray-500'>Lot Size (Sq.Ft)</h2>
-                                        <Input type="number" placeholder="" name="lotSize"
+                                        <h2 className='text-gray-500'>Plot Size (Sq.Ft)</h2>
+                                        <Input type="number" placeholder="" name="plotSize"
                                             onChange={handleChange}
-                                            defaultValue={listing?.lotSize} />
+                                            defaultValue={listing?.plotSize} />
                                     </div>
                                     <div className='flex gap-2 flex-col'>
                                         <h2 className='text-gray-500'>Area (Sq.Ft)</h2>
@@ -279,7 +279,7 @@ function EditListing({ params }) {
                                         {loading ? <Loader className='animate-spin' /> : 'Save'}
                                     </Button>
 
-                                    {/* <AlertDialog>
+                                    {<AlertDialog>
                                         <AlertDialogTrigger asChild>
                                         <Button type="button" disabled={loading} className="">
                                         {loading ? <Loader className='animate-spin' /> : 'Publish'}
@@ -299,7 +299,7 @@ function EditListing({ params }) {
                                                     </AlertDialogAction>
                                             </AlertDialogFooter>
                                         </AlertDialogContent>
-                                    </AlertDialog> */}
+                                    </AlertDialog>}
 
 
                                 </div>
