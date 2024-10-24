@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images:{
-        
-        domains:['stchrhjasxdzvhubgybo.supabase.co','img.clerk.com']
+        unoptimized:true,
+        domains:['https://stchrhjasxdzvhubgybo.supabase.co/','img.clerk.com']
     }
 };
 
