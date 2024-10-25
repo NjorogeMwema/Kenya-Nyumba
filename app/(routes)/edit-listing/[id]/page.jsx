@@ -228,12 +228,7 @@ function EditListing({ params }) {
                                             defaultValue={listing?.parking}
                                         />
                                     </div>
-                                    <div className='flex gap-2 flex-col'>
-                                        <h2 className='text-gray-500'>Plot Size (Sq.Ft)</h2>
-                                        <Input type="number" placeholder="" name="plotSize"
-                                            onChange={handleChange}
-                                            defaultValue={listing?.plotSize} />
-                                    </div>
+
                                     <div className='flex gap-2 flex-col'>
                                         <h2 className='text-gray-500'>Area (Sq.Ft)</h2>
                                         <Input type="number" placeholder="Ex.1900" name="area"
