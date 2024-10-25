@@ -62,7 +62,7 @@ function Header() {
               </DropdownMenuItem>
             <DropdownMenuItem>
               <Link href={'/user#/my-listing'}>
-              My Listings
+              My Listing
               </Link></DropdownMenuItem>
              
             <DropdownMenuItem> <SignOutButton>Logout</SignOutButton> </DropdownMenuItem>
