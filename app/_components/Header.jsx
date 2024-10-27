@@ -25,7 +25,7 @@ function Header() {
     <div className='p-6 px-10 flex justify-between shadow-sm fixed top-0 w-full z-10 bg-white'>
       <div className='flex gap-12 items-center'>
         <Link href={'/'}>
-          <span className='text-2xl font-bold'>Nyumba Kenya</span>
+          <span className='text-2xl font-bold'>Pata Nyumba Kenya</span>
         </Link>
         <ul className='hidden md:flex gap-10'>
           <Link href={'/'} >

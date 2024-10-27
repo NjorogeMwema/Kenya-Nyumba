@@ -1,40 +1,104 @@
 
-![Build   Deploy Full Stack NextJs Real Estate App](https://github.com/rrs301/real-estate/assets/20216436/ad97c156-637e-4af5-9836-fda6fe2506b1)
+
+This is a real estate application built with Next.js. The app allows users to list, edit, and manage real estate properties.
+
+## Project Structure
+
+```
+real-estate-main/
+    ├── .env.local
+    ├── .gitignore
+    ├── .next/
+    ├── .trunk/
+    ├── app/
+    │   ├── components/
+    │   ├── (routes)/
+    │   │   ├── edit-listing/
+    │   │   │   ├── _components/
+    │   │   │   │   └── 
+
+FileUpload.jsx
 
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+    │   │   │   └── [id]/
+    │   │   │       └── 
+
+page.jsx
+
+
+    │   ├── jsconfig.json
+    │   ├── lib/
+    │   ├── middleware.js
+    │   ├── next.config.mjs
+    │   ├── 
+
+package.json
+
+
+    │   ├── postcss.config.js
+    │   ├── public/
+    │   ├── 
+
+README.md
+
+
+    │   ├── tailwind.config.js
+    │   └── utils/
+```
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
+- Node.js
+- npm
+
+### Installation
+
+1. Clone the repository:
+
+    ```sh
+    git clone https://github.com/yourusername/real-estate-app.git
+    cd real-estate-app
+    ```
+
+2. Install dependencies:
+
+    ```sh
+    npm install
+    ```
+
+3. Create a `.env.local` file and add your environment variables.
+
+### Running the Development Server
+
+```sh
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Building for Production
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```sh
+npm run build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Starting the Production Server
 
-## Learn More
+```sh
+npm start
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Key Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **File Upload**: Users can upload images for their listings. See [`FileUpload`](app/(routes)/edit-listing/_components/FileUpload.jsx).
+- **Edit Listings**: Users can edit their listings. See [`EditListing`](app/(routes)/edit-listing/[id]/page.jsx).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Dependencies
 
-## Deploy on Vercel
+- Next.js
+- Supabase
+- Tailwind CSS
+- Radix UI
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+For a full list of dependencies, see the [`package.json`](package.json) file.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

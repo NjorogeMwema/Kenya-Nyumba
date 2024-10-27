@@ -18,7 +18,6 @@ function AgentDetail({listingDetail}) {
                 <h2 className='text-gray-500'>{listingDetail?.createdBy}</h2>
             </div>
         </div>
-        <Button>Send Message</Button>
     </div>
   )
 }
