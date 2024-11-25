@@ -79,3 +79,13 @@
   box-shadow: none;
   width: '100%';
 }
+
+.blue-button {
+  background-color: blue;
+  color: white; /* Optional: to ensure the text is readable */
+  border: none; /* Optional: to remove any border */
+}
+
+.blue-button:hover {
+  background-color: darkblue; /* Optional: to change color on hover */
+}

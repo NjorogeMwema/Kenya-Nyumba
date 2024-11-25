@@ -129,6 +129,13 @@ function EditListing({ params }) {
         .eq('id', params?.id)
         .select()
 
+        if(error)
+        {
+            setLoading(false)
+            toast('Error while publishing')
+            return
+        }
+
         if(data)
         {
             setLoading(false)
@@ -213,10 +220,10 @@ function EditListing({ params }) {
                                             defaultValue={listing?.bathroom} />
                                     </div>
                                     <div className='flex gap-2 flex-col'   >
-                                        <h2 className='text-gray-500'>Built In</h2>
+                                        <h2 className='text-gray-500'>Year Built</h2>
                                         <Input type="number" placeholder="Ex.2010"
                                             onChange={handleChange}
-                                            defaultValue={listing?.builtIn} name="builtIn" />
+                                            defaultValue={listing?.yearBuilt} name="builtIn" />
                                     </div>
 
                                 </div>
@@ -258,14 +265,14 @@ function EditListing({ params }) {
                                         <h2 className='text-gray-500'>Description</h2>
                                         <Textarea placeholder="" name="description"
                                             onChange={handleChange}
-                                            defaultValue={listing?.description} />
+                                            defaultValue={listing?.description || ''} />
                                     </div>
                                 </div>
                                 <div>
                                     <h2 className='font-lg text-gray-500 my-2'>Upload Property Images</h2>
                                     <FileUpload
                                         setImages={(value) => setImages(value)}
-                                        imageList={listing.listingImages}
+                                        imageList={listing.listingImages || []}
                                     />
                                 </div>
                                 <div className='flex gap-7 justify-end'>

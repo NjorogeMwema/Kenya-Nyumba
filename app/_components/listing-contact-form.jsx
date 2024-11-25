@@ -57,7 +57,8 @@ export default function ListingContactForm({ listingId }) {
     if (result.success) {
       toast({
         title: "Message Sent",
-        description: `Your message has been sent to ${listingInfo.fullName}.`,
+        description: `Your message has been sent successfully to ${listingInfo.fullName}.`,
+        duration: 5000, // Display for 5 seconds
       })
       setOpen(false)
     } else {
@@ -65,6 +66,7 @@ export default function ListingContactForm({ listingId }) {
         title: "Error",
         description: "There was an error sending your message. Please try again.",
         variant: "destructive",
+        duration: 5000, // Display for 5 seconds
       })
     }
   }
@@ -82,7 +84,7 @@ export default function ListingContactForm({ listingId }) {
   return (
     <Dialog open={open} onOpenChange={handleOpenChange}>
       <DialogTrigger asChild>
-        <Button variant="outline">Contact Agent</Button>
+      <Button className="blue-button">Contact Agent</Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
